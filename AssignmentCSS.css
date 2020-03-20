@@ -3,8 +3,18 @@
 */
 #mainTitle {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #90ee90;
     padding: 14px 14px;
+    text-align: center;
+}
+header {
+    display: flex;
+    align-items: center;
+    background-color: #90ee90;
+    margin: 
+}
+#logo {
+    height: 80px;
+    width: 80px;
 }
 a:visited{
     color: burlywood;
@@ -12,76 +22,43 @@ a:visited{
 a:active{
     color: plum;
 }
-.topBar {
+#topBar {
     overflow: hidden;
-    background-color: #013220
+    height: 40px;
 }
-.topBar a {
-    float: left;
-    color: #90ee90;
-    text-align: top;
+#topBar a {
+    color: violet;
+    font-size: 14px;
+    font-weight: bold;
     padding: 12px 12px;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
 }
-.topBar a.currentPage {
-    background-color: #a9a9a9;
+#topBar a.currentPage {
+    background-color: violet;
     color: #90ee90;
 }
-.topBar a:hover {
-    background-color: #a9a9a9;
+#topBar a:hover {
+    background-color: violet;
     color: #90ee90;
-}
-p {
-    font-size: 16px;
 }
 body {
     background-color: #daffd4;
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 1200px;
+    margin: auto;
 }
-.form {
-    font-weight: bold;
-}
-sup {
-    color: red;
-}
-#textBox {
-    height: 120px;
-    width: 300px;
-}
-figure {
+#batPic {
+    height: 200px;
+    width: 200px;
     border: 1pt solid #A8A8A8;
-    background-color: #EDEDDD;
-    padding: 5px;
-    width: 150 px;
-    position: relative;
-    float: right;
-}
-figcaption {
-    text-align: center;
-    font-weight: bold;
-}
-caption {
-    font-weight: bold;
-    padding: 0.25em 0 0.25em 0;
-    text-align: center;
-    text-transform: uppercase;
-    border-top: 1px solid #013220;
-}
-#footer {
-    position: relative;
-    left:0;
-    bottom:0;
-    width:100%;
-    height:60px;
-    font-weight:bold;
-}
-#firstLetter::first-letter{ 
-    color:rgb(240, 60, 60);
-    font-size: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 a[target] {
     color: #90ee90;
+}
+@media screen and (min-width: 1200px) {
+
 }
 
   

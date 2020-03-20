@@ -12,133 +12,20 @@
     </head>
     <body>
         <header>
-            <h1 id = "mainTitle">Little Brown Myotis Conservation</h1>
-            <img src="images/Logo.png" alt="Save the Bats Logo" />
-                <nav class = "topBar">
-                    <a class = "currentPage" href="WebsiteMain.html">Main Page</a>
-                    <a href="IndustrialThreats.html" target="_top">Industrial Threats </a>
-                    <a href="EnvironmentalThreats.html">Environmental Threats</a>
-                    <a href="https://wildlife-species.canada.ca/species-risk-registry/species/speciesDetails_e.cfm?sid=1173">Species at Risk</a>
-                    <a href="https://www.alberta.ca/white-nose-syndrome.aspx">White Nose Syndrome</a>
-                    <a href="#footer">Bottom of Current Page</a>
-                </nav>
-            </header>
-            <main>
+        <img src="images/Logo.png" alt="Save the Bats Logo" id = "logo"/>
+            <nav id = "topBar">
+                <a class = "currentPage" href="WebsiteMain.html">Main Page</a>
+                <a href="IndustrialThreats.html" target="_top">Industrial Threats </a>
+                <a href="EnvironmentalThreats.html">Environmental Threats</a>
+            </nav>
+        </header>
+        <main>
+            <h2 id = "mainTitle">Little Brown Myotis Conservation</h2>
             <article>
                 <figure>
-                    <img src = "images/little_brown_myotis.jpg" alt = "Little Brown Myotis"
-                     height = 170 width = 170>
-                    <figcaption>Little Brown Myotis</figcaption>
+                    <img src = "images/little_brown_myotis.jpg" alt = "Little Brown Myotis" id = "batPic">
                 </figure>
             </article>
-            <article>
-                <h2>General Information</h2>
-                <p id = firstLetter>
-                    The little brown myotis is a type of mouse-eared microbat found in North America. 
-                    It has a little body size and shiny dark colored hide. It is comparative in appearance to a few other mouse-eared bats, 
-                    counting the Indiana bat, northern long-eared bat, and Arizona myotis, to which it is firmly related. In spite of its name, 
-                    the little brown myotis isn't firmly identified with the large brown bat, which has a place with an alternate class.
-                <br/>
-                <br/>
-                    Its mating framework is polygynandrous, or indiscriminate, and females bring forth one posterity yearly. 
-                    The posterity, called pups, 
-                    are immediately weaned and arrive at adult size in certain measurements by three weeks old. 
-                    The little brown myotis has a mean life expectancy of 6.5 years, 
-                    however one individual in the wild arrived at 34 years of age. It is nocturnal, 
-                    searching for its creepy crawly prey around evening time and perching in empty trees or structures during the day, 
-                    among less normal perch types.
-                    It explores and finds prey with echolocation.
-                </p>
-                <h2>Interesting Facts</h2>
-                <p>
-                    The Little Brown Myotis has excellent vision, although they also use echolocation to navigate and to detect food sources such as insects. 
-                    In one hour they are capable of catching up to 1000 insects. They are predated by raccoons, hawks, owls, and snakes.
-
-                </p>
-            </article>
-            <article>
-                <h2>How You Can Help</h2>
-                <p>
-                    If you're interested in helping out the Little Brown Myotis, please consider donating and spreading the word
-                    about this amazing creature! Thank you!
-                </p>
-                <!--Takes in user input and sends to company email-->
-                <form method = "GET" action = "jrove073@mtroyal.ca" name = "donationForm">
-                    <p class = "form">
-                        Donate:
-                        <label> 5$
-                            <input name = "radio" type = "radio">
-                        </label>
-                        <label> 10$
-                            <input name = "radio" type = "radio">
-                        </label>
-                        <label> 25$
-                            <input name = "radio" type = "radio">
-                        </label>
-                        <label> 50$
-                            <input name = "radio" type = "radio">
-                        </label>
-                        <label> 100$
-                            <input name = "radio" type = "radio">
-                        </label>
-                    </p>
-                    <p class = "form">
-                        <label> Other:
-                            <input name = "amount" type = "number" min = "1">
-                        </label>
-                    </p>
-                    <p>
-                        <label>Student
-                            <input name = "student" type = "checkbox">
-                        </label>
-                        <label>Parent
-                            <input name = "parent" type = "checkbox">
-                        </label>
-                        <label>Biologist
-                            <input name = "biologist" type = "checkbox">
-                        </label>
-                        <label>Have Donated Before
-                            <input name = "historyOfDonation" type = "checkbox">
-                        </label>
-                    </p>
-
-                    <h2>Any Questions?</h2>
-                    <h3>Leave feedback below.</h3>
-                    
-                    <p class = "form">
-                        <label> Subject:<sup>*</sup>
-                            <input name = "subject" type = "text" maxlength = "25" required>
-                        </label>
-                    </p>
-                    <p class = "form">
-                        Body:<sup>*</sup>
-                        <textarea id = "textBox" required>
-
-                        </textarea>
-                    </p>
-                    <p class = "form">
-                        <label> Email:<sup>*</sup>
-                            <input name = "email" type = "email" required 
-                            placeholder = "johnsmith@example.ca" 
-                            pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                        </label>
-                    </p>
-                    <p class = "form">
-                        <label>Phone Number:
-                            <input name = "phoneNumber" type = "tel" 
-                            placeholder = "123-456-7890" pattern = "^\d{3}-\d{3}-\d{4}$">
-                        </label>
-                    </p>
-                    <p>
-                        <input name = "submit" type = "submit">
-                        <input name = "reset" type = "reset">
-                    </p>
-                </form>
-            </article>
         </main>
-        <footer id="footer">
-            <a href="#mainTitle">Top of Page</a>
-            <p>Save the Bats! Copyright &copy; 2020</p>
-        </footer>
     </body>
 </html>
