@@ -22,14 +22,18 @@ a:active{
     color: plum;
 }
 #topBar {
-    overflow: hidden;
-    height: 40px;
+    padding: 30px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-left: auto;
 }
 #topBar a {
     color: violet;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
-    padding: 12px 12px;
+    border: 1px solid violet;
+    padding: 10px;
 }
 #topBar a.currentPage {
     background-color: violet;
@@ -40,7 +44,7 @@ a:active{
     color: #90ee90;
 }
 body {
-    background-color: #daffd4;
+    background-color: #228B22;
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1200px;
     margin: auto;
@@ -58,6 +62,9 @@ a[target] {
 }
 @media screen and (min-width: 1200px) {
 
+}
+#top {
+    
 }
 
   
