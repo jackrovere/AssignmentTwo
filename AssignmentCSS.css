@@ -48,7 +48,7 @@ a:active{
 }
 #topBar a.currentPage {
     background-color:  #7880b2;
-    color: #90ee90;
+    color: white;
 }
 #topBar a:hover {
     background-color: #acb7ae;
@@ -60,7 +60,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1200px;
     margin: auto;
-    
+    border: 1px solid black;
 }
 #batPic {
     height: 200px;
@@ -118,6 +118,7 @@ h2 {
 }
 .centralGrid div {
     background-color: #82716e;
+    padding: 5px;
 }
 .content {
    min-height: 100%;
