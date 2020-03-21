@@ -112,7 +112,7 @@ h2 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
-    margin: 125px 40px 400px 40px;
+    margin: 125px 40px 80px 40px;
     grid-gap: 20px;
     padding: 5px;
 }
@@ -135,5 +135,20 @@ h2 {
 .push {
     min-height: 50px;
 }
+#form {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 40px auto;
+}
+#form div {
+    background-color: #acb7ae;
+    padding: 10px;
+    text-align: left;
+}
+textarea {
+    height: 200px;
+    width: 400px;;
+}
+
    
   
