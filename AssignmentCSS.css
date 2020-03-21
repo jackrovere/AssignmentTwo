@@ -3,27 +3,34 @@
 */
 #mainTitle {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 14px 14px;
+    padding: 50px 14px 30px;
     text-align: center;
 }
 main {
-    background-color: #228B22;
+    background-color: white;
+    height: 100%;
+    margin: 0;
+}
+article {
+    height: 375px;
+    background-color: #e4decd;;
 }
 header {
     display: flex;
     align-items: center;
-    background-color: #90ee90;
+    background-color: #c2b490;
     margin: 0;
 }
 #logo {
     height: 80px;
     width: 80px;
+    opacity: 1.0;
 }
 a:visited{
     color: burlywood;
 }
 a:active{
-    color: plum;
+    color: #fa9cbd;
 }
 #topBar {
     padding: 30px;
@@ -33,26 +40,27 @@ a:active{
     margin-left: auto;
 }
 #topBar a {
-    color: violet;
+    color: gray;
     font-size: 12px;
     font-weight: bold;
-    border: 1px solid violet;
+    border: 1px solid #82716e;
     padding: 10px;
 }
 #topBar a.currentPage {
-    background-color: violet;
+    background-color:  #7880b2;
     color: #90ee90;
 }
 #topBar a:hover {
-    background-color: violet;
-    color: #90ee90;
+    background-color: #acb7ae;
+    color: #F0FFFF;
 }
+
 body {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1200px;
     margin: auto;
-    border: 1px solid black;
+    
 }
 #batPic {
     height: 200px;
@@ -62,9 +70,22 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+#whiteNose {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img {
+    opacity: 0.5;
+}
+img:hover {
+    opacity: 1.0;
+}
+
 @media screen and (max-width: 700px) {
     .centralGrid {
-        grid-template-rows: 4fr;
+        grid-template-rows: 4fr; 
     }
     #gridOne {
         grid-row: 1;
@@ -91,11 +112,27 @@ h2 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
-    margin: 10%;
-    grid-gap: 10px;
+    margin: 125px 40px 400px 40px;
+    grid-gap: 20px;
+    padding: 5px;
 }
 .centralGrid div {
-    border: 1px solid black;
+    background-color: #82716e;
 }
-
+.content {
+   min-height: 100%;
+   margin-bottom: -50px;
+}
+.footer {
+    background-color: #acb7ae;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    padding: 20px;
+    color: gray;
+}
+.push {
+    min-height: 50px;
+}
+   
   
