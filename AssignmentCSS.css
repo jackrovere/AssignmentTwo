@@ -30,7 +30,7 @@ a:visited{
     color: burlywood;
 }
 a:active{
-    color: #fa9cbd;
+    color: #82716e;
 }
 #topBar {
     padding: 30px;
@@ -47,7 +47,7 @@ a:active{
     padding: 10px;
 }
 #topBar a.currentPage {
-    background-color:  #7880b2;
+    background-color:  #82716e;
     color: white;
 }
 #topBar a:hover {
@@ -59,8 +59,9 @@ body {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1200px;
-    margin: auto;
-    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 #batPic {
     height: 200px;
@@ -82,9 +83,47 @@ img {
 img:hover {
     opacity: 1.0;
 }
-
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.box {
+    width: 100%;
+    background-color: beige;
+}
+@media only screen and (max-width: 400px) {
+    body {
+        width: 100%;
+        }
+    header {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 401px) and (max-width: 700px) {
+    body {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 701px) and (max-width: 1200px) {
+    body {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    #form {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header {
+        width: 100%;
+    }
+    
+}
 @media screen and (max-width: 700px) {
-    .centralGrid {
+    #centralGrid {
         grid-template-rows: 4fr; 
     }
     #gridOne {
@@ -107,38 +146,32 @@ img:hover {
 h2 {
     margin: 0;
 }
-.centralGrid {
+#centralGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
-    margin: 125px 40px 80px 40px;
+    margin: 125px 40px 40px 40px;
     grid-gap: 20px;
     padding: 5px;
 }
-.centralGrid div {
+#centralGrid div {
     background-color: #82716e;
     padding: 5px;
 }
-.content {
-   min-height: 100%;
-   margin-bottom: -50px;
-}
 .footer {
     background-color: #acb7ae;
-    width: 100%;
     text-align: center;
     height: 50px;
     padding: 20px;
     color: gray;
-}
-.push {
-    min-height: 50px;
+    margin: 0;
 }
 #form {
     display: flex;
     justify-content: center;
-    margin: 0 auto 40px auto;
+    margin: 20px auto 0 auto;
+    padding: 50px;
 }
 #form div {
     background-color: #acb7ae;
@@ -149,6 +182,12 @@ textarea {
     height: 200px;
     width: 400px;;
 }
-
+#submit {
+    float: right;
+}
+#submit:hover {
+    background-color: #82716e;
+    color: white;
+}
    
   

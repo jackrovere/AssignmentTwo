@@ -11,9 +11,8 @@
         <meta name="author" content = "Jack Rovere">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-    <body>
-        <div class= "content">
-        <header>
+    <body >
+        <header >
             <img src="images/Logo.png" alt="Save the Bats Logo" id="logo"/>
                 <nav id= "topBar">
                     <a href="WebsiteMain.html">Main Page</a>
@@ -21,7 +20,7 @@
                     <a class="currentPage" href="EnvironmentalThreats.html">Environmental Threats</a>
                 </nav>
         </header>
-        <main>
+        <main class="box">
             <article id="top">
                 <h2 id="mainTitle">Little Brown Myotis Conservation</h2>
                 <figure>
@@ -29,7 +28,7 @@
                 </figure>
                 <h2 id="mainTitle">Environmental Threats</h2>
             </article>
-            <section class="centralGrid">
+            <section class="main" id="centralGrid">
                 <div id="gridOne">
                 <h2>White Nose Syndrome</h2>
                 <p>White Nose Syndrome (WNS) is a disease causing the Little Brown Myotis to awaken during hibernation (Environment Canada, 2015). 
@@ -64,7 +63,7 @@
                 </div>
             </section>
             </article>
-            <section id = "form">
+            <section id= "form">
                 <form action="mailto:savethebats@gmail.com" method="POST">
                     <h2>Any Questions? Contact Us Below!</h2>
                         <br/>
@@ -84,12 +83,11 @@
                         <textarea></textarea>
                     </div>
                         <br/>
-                    <input name = "submit" type = "submit">
+                    <input id="submit" name = "submit" type = "submit">
                 </form>
             </section>
-        </main>
-        <div class="push"></div>
         </div>
+        </main>
         <footer class="footer">Save the Bats! Copyright &copy; 2020</footer>
     </body>
 </html>
