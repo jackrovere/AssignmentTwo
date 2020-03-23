@@ -61,7 +61,7 @@ body {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    
+    border: 3px solid black;
 }
 #batPic {
     height: 200px;
@@ -91,6 +91,7 @@ img:hover {
     width: 100%;
     background-color: beige;
 }
+
 @media screen and (max-width: 700px) {
     #centralGrid {
         grid-template-rows: 4fr; 
