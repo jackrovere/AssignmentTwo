@@ -1,6 +1,4 @@
-/*
-    This is the main style page for the 3 websites
-*/
+/************** Style Code for the Main Page *******************/
 #mainTitle {
     font-family: Arial, Helvetica, sans-serif;
     padding: 50px 14px 30px;
@@ -60,7 +58,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1200px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;  
 }
 #batPic {
     height: 200px;
@@ -70,7 +68,6 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
 #whiteNose {
     display: block;
     margin-left: auto;
@@ -89,6 +86,49 @@ img:hover {
 .box {
     width: 100%;
     background-color: beige;
+}
+.footer {
+    background-color: #acb7ae;
+    text-align: center;
+    height: 50px;
+    padding: 20px;
+    color: gray;
+    margin: 0;
+}
+
+/*********************** Mostly Fluid Design & Style Code for the Grid *****************/
+@media screen and (max-width: 700px) {
+    #centralGrid {
+        grid-template-rows: 4fr; 
+    }
+    #gridOne {
+        grid-row: 1;
+        grid-column: 1 / 3;
+    }
+    #gridTwo {
+        grid-row: 2;
+        grid-column: 1 / 3;
+    }
+    #gridThree {
+        grid-row: 3;
+        grid-column: 1 / 3;
+    }
+    #gridFour {
+        grid-row: 4;
+        grid-column: 1 / 3;
+    }
+}
+h2 {
+    margin: 0;
+}
+#centralGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    margin: 125px 40px 40px 40px;
+    grid-gap: 20px;
+    padding: 5px;
 }
 
 @media screen and (max-width: 700px) {
@@ -128,14 +168,7 @@ h2 {
     background-color: #82716e;
     padding: 5px;
 }
-.footer {
-    background-color: #acb7ae;
-    text-align: center;
-    height: 50px;
-    padding: 20px;
-    color: gray;
-    margin: 0;
-}
+/******************* Form Style & Accessibility Code **********************/
 #form {
     display: flex;
     justify-content: center;
@@ -158,5 +191,4 @@ textarea {
     background-color: #82716e;
     color: white;
 }
-   
-  
+

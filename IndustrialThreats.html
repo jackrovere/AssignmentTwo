@@ -11,6 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body >
+        <a href="#maincontent">Skip to main content</a>
         <header >
             <img src="images/Logo.png" alt="Save the Bats Logo" id="logo"/>
                 <nav id= "topBar">
@@ -19,7 +20,7 @@
                     <a href="EnvironmentalThreats.html">Environmental Threats</a>
                 </nav>
         </header>
-        <main class="box">
+        <main id="maincontent" class="box">
             <article id="top">
             <h2 id="mainTitle">Little Brown Myotis Conservation</h2>
                 <figure>
@@ -75,22 +76,23 @@
                     <h2>Any Questions? Contact Us Below!</h2>
                         <br/>
                     <div>
-                        <label>Your Name:</label>
-                        <input name = "name" type = "text" placeholder = "Mr. Batlover" required>
+                        <label for="Name">Your Name (required):
+                        <input name = "name" type = "text" placeholder = "Mr. Batlover" tabindex="0" required>
+                        </label>
                     </div>
                         <br/>
                     <div>
-                        <label>Your Email:</label>
+                        <label for="Email">Your Email (required):</label>
                         <input name = "email" type = "email" placeholder = "batlover@gmail.com"
-                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" tabindex="0" required>
                     </div>
                         <br/>
                     <div>
-                        <p>Your Message:</p>
+                        <p for="Message">Your Message:</p>
                         <textarea></textarea>
                     </div>
                         <br/>
-                    <input id="submit" name = "submit" type = "submit">
+                    <input id="submit" name = "submit" type = "submit" tabindex="0">
                 </form>
             </section>
         </main>
